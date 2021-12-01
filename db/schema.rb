@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 2021_11_24_223018) do
   create_table "tasks", force: :cascade do |t|
     t.string "title"
     t.string "description"
+    t.timestamp :created_at
+    t.timestamp :updated_at
   end
 
 end
